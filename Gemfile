@@ -39,6 +39,11 @@ gem 'awesome_print'
 gem 'coffee-script-source', '1.8.0'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'bootswatch-rails'
+gem 'activerecord-reset-pk-sequence'
+gem 'seed-fu', '~> 2.3'
+gem 'kaminari'
+gem 'kaminari-bootstrap', '~> 3.0.1'
+gem 'ransack'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -1,5 +1,6 @@
 class SongsController < ApplicationController
   def index
-  	@songs = Song.all # 追加：全ての曲を取得する
+  	@q = Song.ransack(params[:q])
+  	@songs = @q.result.page(params[:page]) 
   end
 end
