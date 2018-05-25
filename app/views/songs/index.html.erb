@@ -10,7 +10,7 @@
   <tbody>
     <% @songs.each do |song| %>
     <tr>
-      <td><%= song.title %></td>
+      <td><%= sort_link(@q, :title) %></td>
       <td><%= song.display_artist %></td>
       <td><%= song.ranking %></td>
       <td><%= song.year %></td>
